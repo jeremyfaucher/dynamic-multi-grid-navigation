@@ -1,7 +1,4 @@
-<p>I was intrigued by the multi grid option that <a href="https://unsplash.com/" target="_blank">Unsplash</a> has for users to view the photographs. It is a minimal user friendly way to give a dynamic grid viewing option.</p>
-<p>With some simple CSS and jQuery I was able to reproduce this feature.</p>
-<p></p>
-<br>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
 <div class="multi-grid-nav">
     <div class="grid-single bars-container">
@@ -29,79 +26,6 @@
 <div class="multi col-sm-12 col-lg-4">
     <img src="https://images.unsplash.com/photo-1633403796593-496ba5e9fc75?crop=entropy&cs=srgb&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTYzNTI5MjkxNQ&ixlib=rb-1.2.1&q=85" class="alignnone" alt="" />
 </div>
-<style type="text/css">
-body {
-font-family: "Roboto","Helvetica","Arial",sans-serif;
-color: #333;
-margin: 0;
-overflow-x:hidden;
-}
-main {
-font-size: 19px;
-line-height: 32px;
-}
-* {
--webkit-box-sizing: border-box;
--moz-box-sizing: border-box;
-box-sizing: border-box;
-}
-.multi-grid-nav {
-    display: inline-block;
-}
-.squares-container {
-    float: left;
-    margin-right: 3px;
-}
-.square {
-    background-color: black;
-    width: 10px;
-    height: 10px;
-    margin-bottom: 3px;
-}
-.bars-container {
-    float: left;
-    margin-right: 18px;
-}
-.bars-container .bar {
-    background-color: black;
-    width: 23px;
-    height: 10px;
-    margin-bottom: 3px;
-}
-.bars-container:hover .bar,
-.squares-container:hover .square {
-    background-color: gray;
-}
-.text-center {
-text-align: center;
-}
-/* Images */
-img {
-vertical-align: middle;
-width: 100%;
-height: auto;
-}
-/* Columns */
-.col-lg-4, .col-lg-12 {
-float: left;
-position: relative;
-min-height: 1px;
-padding-right: 10px;
-padding-left: 10px;
-}
-.col-lg-4 {
-width: 33.33333333%;
-}
-.col-lg-12 {
-width: 100%;
-}
-@media (max-width: 747px){
-.col-sm-12 {
-width: 100%;
-}
-}
-</style>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
 <script>
     $(document).ready(function(){
     $(".grid-single").click(function () {
