@@ -44,6 +44,9 @@ vertical-align: middle;
 width: 100%;
 height: auto;
 }
+.col-lg-12 img {
+    margin-bottom: 22px;
+}
 /* Columns */
 .col-lg-4, .col-lg-12 {
 float: left;
